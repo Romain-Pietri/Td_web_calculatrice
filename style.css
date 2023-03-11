@@ -24,8 +24,20 @@ body{
 button{
     background-color: khaki;
 }
+#egal{
+    background-color: green;
+}
+#egal:hover{
+    background-color: #00ff00;
+}
+#egal:active{
+    background-color: blue;
+}
 button:hover{
     background-color: #ed0000;
+}
+button:active{
+    background-color: yellow;
 }
 .inputoutput{
     display : grid;
