@@ -25,10 +25,15 @@ function efface() {
 
 function calcul() {
     var affichage = document.getElementById("calcul").innerHTML;
-
+    try{
     var result =eval( affichage);
-    document.getElementById("resultat").innerHTML = result;
     }
+    catch(SyntaxError){
+        alert("Syntaxe incorrecte \n Veuillez recommencer");
+        result= "Error"
+    }
+    document.getElementById("resultat").innerHTML = result;
+}
 
 function init() {
     ecouteBoutons();
