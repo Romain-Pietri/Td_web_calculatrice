@@ -12,6 +12,7 @@ function ecouteBoutons() {
         }
     }
 }
+
 function affiche(valeur) {
     if(document.getElementById("resultat").innerHTML != ""){ efface(); }
     var affichage = document.getElementById("calcul").innerHTML += valeur;
